@@ -3,8 +3,6 @@
 Transformers, including the T5 and MarianMT, have enabled effective understanding and generating complex programming codes. Let's see how!
 
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
 ![Stars](https://img.shields.io/github/stars/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose?style=social)
 
 
@@ -156,6 +154,6 @@ To sum up, in this project, we demonstrated how to input code descriptions to th
 
 
 ## 🙏 Acknowledgments
-Thanks to all contributors and supporters of this project. Special thanks to DESSERT Research Lab for their invaluable datasets and insights.
+Thanks to **Marco Rinaldi**, my teammate. Special thanks to [DESSERT Research Lab](https://github.com/dessertlab) for their invaluable datasets and insights.
 
 
