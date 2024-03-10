@@ -5,7 +5,6 @@ Transformers, including the T5 and MarianMT, have enabled effective understandin
 **Let's see how!**
 
 [![View the Jupyter File](https://img.shields.io/badge/view-the%20Jupyter%20File-orange)](https://github.com/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose/blob/main/Data_Security_t5small.ipynb)
-
 ![Stars](https://img.shields.io/github/stars/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose?style=social)
 
 
