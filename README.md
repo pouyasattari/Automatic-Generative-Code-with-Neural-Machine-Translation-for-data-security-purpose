@@ -1,30 +1,29 @@
-# Automatic Generative Code with Neural Machine Translation (NMT)
+# 🚀 Automatic Generative Code with Neural Machine Translation (NMT)
 
 Transformers, including the T5 and MarianMT, have enabled effective understanding and generating complex programming codes. Let's see how!
 
+# 📚 Table of Contents
+1. [👋 Introduction](#-introduction)
+2. [📖 Violent-python Dataset](#-violent-python-dataset)
+3. [🤖 Transformers](#-transformers)
+    - [🔍 T5 TRANSFORMER MODEL](#-t5-transformer-model)
+    - [🌍 MarianMT](#-marianmt)
+    - [🔑 Key Distinctions Between T5 and MarianMT](#-key-distinctions-between-t5-and-marianmt)
+4. [📋 DATA COLLECTION AND PREPROCESSING](#-data-collection-and-preprocessing)
+5. [🎯 ZERO-SHOT CLASSIFICATION](#-zero-shot-classification)
+6. [🔧 GENERIC PURPOSE](#-generic-purpose)
+7. [🎯 SPECIFIC PURPOSE](#-specific-purpose)
+8. [🔬 TRANSFER LEARNING AND FINE-TUNING](#-transfer-learning-and-fine-tuning)
+9. [📈 COMPARISON OF THE MODELS](#-comparison-of-the-models)
+10. [🏁 Final Result](#-final-result)
 
-# Table of Contents
-1. [Introduction](#introduction)
-2. [Violent-python Dataset](#violent-python-dataset)
-3. [Transformers](#transformers)
-    - [T5 TRANSFORMER MODEL](#t5-transformer-model)
-    - [MarianMT](#marianmt)
-    - [Key Distinctions Between T5 and MarianMT](#key-distinctions-between-t5-and-marianmt)
-4. [DATA COLLECTION AND PREPROCESSING](#data-collection-and-preprocessing)
-5. [ZERO-SHOT CLASSIFICATION](#zero-shot-classification)
-6. [GENERIC PURPOSE](#generic-purpose)
-7. [SPECIFIC PURPOSE](#specific-purpose)
-8. [TRANSFER LEARNING AND FINE-TUNING](#transfer-learning-and-fine-tuning)
-9. [COMPARISON OF THE MODELS](#comparison-of-the-models)
-10. [Final Result](#final-result)
-
-## Introduction
+## 👋 Introduction
 
 In our project, “Automatic Generative Code with Neural Machine Translation for Data Security Purposes,” we utilize the T5 Transformer and MarianMT model. Our dataset is derived from the violent-python repository, containing Python code snippets from offensive software and their plain English descriptions. This dataset aids in training the model to translate English Commands into Code snippets.
 
 We further fine-tune the model to automatically generate code, with a focus on data security. This endeavor lies at the intersection of Neural Machine Translation and code creation, contributing towards simpler and safer software development practices.
 
-## Violent-python Dataset
+## 📖 Violent-python Dataset
 
 <p align="center">
   <img src="https://sattari.org/wp-content/uploads/2024/03/Dataset-1024x532.png" alt="Violent-python Dataset, Image by Pouya Sattari" style="width:70%;">
@@ -36,7 +35,7 @@ With a total of 1,372 samples, the dataset is structured into three subsets: Ind
 
 You can find the Dataset on this [GitHub Repository](https://github.com/yourgithub/violent-python) which is Forked from DESSERT Research Lab Github.
 
-## Transformers
+## 🤖 Transformers
 
 Transformers, particularly the T5 model and MarianMT we use, revolutionize machine learning with attention mechanisms and self-attention. These mechanisms enable the effective capture of contextual information, which is essential for understanding and generating complex programming structures.
 
@@ -47,7 +46,7 @@ In our project, encoding captures input code patterns, while decoding generates 
 </p>
 
 
-### T5 TRANSFORMER MODEL
+### 🔍 T5 TRANSFORMER MODEL
 
 The T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervised and supervised tasks, where each task is converted into a text-to-text format. T5 demonstrates exceptional performance on a variety of tasks out-of-the-box by prepending a different prefix to the input corresponding to each task.
 
@@ -57,12 +56,12 @@ T5 is available in different sizes: t5-small, t5-base, t5-large, t5-3b, and t5-1
   <img src="https://sattari.org/wp-content/uploads/2024/03/T5-1024x457.png" alt="T5 Transformer Arch, Image by Pouya Sattari" style="width:70%;">
 </p>
 
-### MarianMT
+### 🌍 MarianMT
 
 MarianMT, developed by Microsoft, is a transformer-based architecture designed specifically for machine translation. Focusing on multilingual translation tasks, it excels in accurately translating text across different languages. This specialization makes MarianMT a powerful tool for enhancing language-related applications and advancing the field of machine translation.
 
 
-### Key Distinctions Between T5 and MarianMT
+### 🔑 Key Distinctions Between T5 and MarianMT
 
 | T5 Architecture | MarianMT Architecture |
 |-----------------|-----------------------|
@@ -72,11 +71,11 @@ MarianMT, developed by Microsoft, is a transformer-based architecture designed s
 | Designed for a wide range of natural language processing tasks. | Focuses on the task of translating text from one language to another. |
 | Capable of handling tasks like summarization, translation, and question-answering within a unified framework. | Specialized in multilingual machine translation and supports various language pairs. |
 
-## DATA COLLECTION AND PREPROCESSING
+## 📋 DATA COLLECTION AND PREPROCESSING
 
 In the data preprocessing phase, we carefully curated the violent-python dataset, aligning with ethical considerations for offensive programs. With 1,372 samples structured into three subsets, we prioritized data security. Shuffling the data further ensured robust training by minimizing biases associated with the original order. This strategic preprocessing laid the foundation for training a resilient automatic code generation model.
 
-## ZERO-SHOT CLASSIFICATION
+## 🎯 ZERO-SHOT CLASSIFICATION
 
 In preparation for training, we initialized the tokenizer and model using our model, configuring the system for GPU or CPU usage as specified.
 
@@ -88,7 +87,7 @@ This approach allows us to gauge the model’s inherent strengths and weaknesses
   <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-8-1024x592.png" alt="ZERO-SHOT CLASSIFICATION, Image by Pouya Sattari" style="width:70%;">
 </p>
 
-## GENERIC PURPOSE
+## 🔧 GENERIC PURPOSE
 
 In this context, the Python code and accompanying instructions showcase the model’s capability to generate code for general programming purposes.
 
@@ -100,7 +99,7 @@ This suggests its efficacy in providing relevant and coherent code solutions for
   <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-9-1024x762.png" alt="GENERIC PURPOSE, Image by Pouya Sattari" style="width:70%;">
 </p>
 
-## SPECIFIC PURPOSE
+## 🧪 SPECIFIC PURPOSE
 
 In the context of our specific task, the provided code iterates through a set of examples, printing both the command and its corresponding ground truth.
 
@@ -112,7 +111,7 @@ This process, repeated for five iterations, underscores the unique challenges an
   <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-10-1024x807.png" alt="SPECIFIC PURPOSE, Image by Pouya Sattari" style="width:70%;">
 </p>
 
-## TRANSFER LEARNING AND FINE-TUNING
+## 🔬 TRANSFER LEARNING AND FINE-TUNING
 
 The code introduces essential parameters for fine-tuning a pre-trained model on a specific task, including the output directory, evaluation strategy, learning rate, and batch sizes.
 
@@ -126,7 +125,7 @@ This underscores the crucial role of fine-tuning in optimizing the model for our
   <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-11-879x1024.png" alt="TRANSFER LEARNING AND FINE-TUNING, Image by Pouya Sattari" style="width:70%;">
 </p>
 
-## COMPARISON OF THE MODELS
+## 📈 COMPARISON OF THE MODELS
 
 The presented results showcase the mean similarity scores for zero-shot and fine-tuned classifications using T5 and MarianMT models.
 
@@ -140,7 +139,7 @@ This discrepancy underscores the effectiveness of fine-tuning in significantly e
   <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-11-879x1024.png" alt="COMPARISON OF The Two Models (T5, MarianMT), Image by Pouya Sattari" style="width:70%;">
 </p>
 
-## Final Result
+## 🏁 Final Result
 
 To sum up, in this project, we demonstrated how to input code descriptions to the Transformer models and receive executable codes with an 81% accuracy by the MarianMT model.
 
