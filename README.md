@@ -1,6 +1,7 @@
 # 🚀 Automatic Generative Code with Neural Machine Translation (NMT)
 
-Transformers, including the T5 and MarianMT, have enabled effective understanding and generating complex programming codes. **Let's see how!**
+Transformers, including the T5 and MarianMT, have enabled effective understanding and generating complex programming codes.
+**Let's see how!**
 
 
 ![Stars](https://img.shields.io/github/stars/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose?style=social)
