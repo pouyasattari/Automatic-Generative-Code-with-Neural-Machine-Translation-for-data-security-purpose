@@ -2,6 +2,22 @@
 
 Transformers, including the T5 and MarianMT, have enabled effective understanding and generating complex programming codes. Let's see how!
 
+
+# Table of Contents
+1. [Introduction](#introduction)
+2. [Violent-python Dataset](#violent-python-dataset)
+3. [Transformers](#transformers)
+    - [T5 TRANSFORMER MODEL](#t5-transformer-model)
+    - [MarianMT](#marianmt)
+    - [Key Distinctions Between T5 and MarianMT](#key-distinctions-between-t5-and-marianmt)
+4. [DATA COLLECTION AND PREPROCESSING](#data-collection-and-preprocessing)
+5. [ZERO-SHOT CLASSIFICATION](#zero-shot-classification)
+6. [GENERIC PURPOSE](#generic-purpose)
+7. [SPECIFIC PURPOSE](#specific-purpose)
+8. [TRANSFER LEARNING AND FINE-TUNING](#transfer-learning-and-fine-tuning)
+9. [COMPARISON OF THE MODELS](#comparison-of-the-models)
+10. [Final Result](#final-result)
+
 ## Introduction
 
 In our project, “Automatic Generative Code with Neural Machine Translation for Data Security Purposes,” we utilize the T5 Transformer and MarianMT model. Our dataset is derived from the violent-python repository, containing Python code snippets from offensive software and their plain English descriptions. This dataset aids in training the model to translate English Commands into Code snippets.
