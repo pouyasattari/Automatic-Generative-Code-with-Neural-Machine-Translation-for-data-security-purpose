@@ -155,6 +155,7 @@ To sum up, in this project, we demonstrated how to input code descriptions to th
 
 
 ## 🙏 Acknowledgments
-Thanks to **Marco Rinaldi**, my teammate. Special thanks to [DESSERT Research Lab](https://github.com/dessertlab) for their invaluable datasets and insights.
+Thanks to **Marco Rinaldi**, my teammate. 
+Special thanks to [DESSERT Research Lab](https://github.com/dessertlab) for their invaluable datasets and insights.
 
 
