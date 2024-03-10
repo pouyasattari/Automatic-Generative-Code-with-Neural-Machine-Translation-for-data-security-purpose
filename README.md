@@ -10,7 +10,9 @@ We further fine-tune the model to automatically generate code, with a focus on d
 
 ## Violent-python Dataset
 
-![Dataset Overview](https://sattari.org/wp-content/uploads/2024/03/Dataset-1024x532.png "Violent-python Dataset, Image by Pouya Sattari")
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Dataset-1024x532.png" alt="Violent-python Dataset, Image by Pouya Sattari" style="width:70%;">
+</p>
 
 The violent-python dataset is meticulously curated from T.J. O’Connor’s book "Violent Python", presenting a collection of Python code from offensive software, each paired with a corresponding plain English description. Covering diverse areas of offensive security such as penetration testing, forensic analysis, network traffic analysis, and OSINT, the dataset mirrors examples from the book, including exploits, forensic tools, network analysis tools, and social engineering techniques.
 
@@ -24,7 +26,9 @@ Transformers, particularly the T5 model and MarianMT we use, revolutionize machi
 
 In our project, encoding captures input code patterns, while decoding generates coherent and syntactically correct code snippets. This architecture significantly enhances our model’s ability to automate code generation while addressing data security concerns.
 
-![Transformers Architecture](https://sattari.org/wp-content/uploads/2024/03/Transformer-Architecture-1024x835.png "Transformers Architecture, Image by Pouya Sattari")
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Transformer-Architecture-1024x835.png" alt="Transformers Architecture, Image by Pouya Sattari" style="width:70%;">
+</p>
 
 
 ### T5 TRANSFORMER MODEL
@@ -33,7 +37,9 @@ The T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupe
 
 T5 is available in different sizes: t5-small, t5-base, t5-large, t5-3b, and t5-11b.
 
-![T5 transformer](https://sattari.org/wp-content/uploads/2024/03/T5-1024x457.png "T5 Transformer Arch, Image by Pouya Sattari")
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/T5-1024x457.png" alt="T5 Transformer Arch, Image by Pouya Sattari" style="width:70%;">
+</p>
 
 ### MarianMT
 
@@ -62,9 +68,9 @@ The focus of this initial phase is to assess the model’s baseline performance 
 
 This approach allows us to gauge the model’s inherent strengths and weaknesses on generic examples before any specific training modifications are applied, providing a valuable benchmark for subsequent optimization efforts.
 
-![ZERO-SHOT CLASSIFICATION](https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-8-1024x592.png "ZERO-SHOT CLASSIFICATION, Image by Pouya Sattari")
-
-
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-8-1024x592.png" alt="ZERO-SHOT CLASSIFICATION, Image by Pouya Sattari" style="width:70%;">
+</p>
 
 ## GENERIC PURPOSE
 
@@ -74,8 +80,9 @@ Utilizing a pre-trained language model and tokenizer, the code accurately respon
 
 This suggests its efficacy in providing relevant and coherent code solutions for a wide range of generic programming scenarios.
 
-![GENERIC PURPOSE](https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-9-1024x762.png "GENERIC PURPOSE, Image by Pouya Sattari")
-
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-9-1024x762.png" alt="GENERIC PURPOSE, Image by Pouya Sattari" style="width:70%;">
+</p>
 
 ## SPECIFIC PURPOSE
 
@@ -85,9 +92,9 @@ The objective is to evaluate the model’s performance on our tailored task, dis
 
 This process, repeated for five iterations, underscores the unique challenges and nuances our specific task poses to the pre-trained model, emphasizing the need to scrutinize and potentially fine-tune the model to enhance its efficacy in addressing the intricacies of our targeted use case.
 
-![SPECIFIC PURPOSE](https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-10-1024x807.png
- "SPECIFIC PURPOSE, Image by Pouya Sattari")
-
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-10-1024x807.png" alt="SPECIFIC PURPOSE, Image by Pouya Sattari" style="width:70%;">
+</p>
 
 ## TRANSFER LEARNING AND FINE-TUNING
 
@@ -99,8 +106,9 @@ The subsequent trainer.train() call initiates the fine-tuning process, allowing 
 
 This underscores the crucial role of fine-tuning in optimizing the model for our goals and ensuring its proficiency in addressing the nuances of the targeted use case through iterative training epochs.
 
-![TRANSFER LEARNING AND FINE-TUNING](https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-11-879x1024.png
- "TRANSFER LEARNING AND FINE-TUNING, Image by Pouya Sattari")
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-11-879x1024.png" alt="TRANSFER LEARNING AND FINE-TUNING, Image by Pouya Sattari" style="width:70%;">
+</p>
 
 ## COMPARISON OF THE MODELS
 
@@ -112,12 +120,15 @@ However, the divergence becomes evident after fine-tuning, where MarianMT achiev
 
 This discrepancy underscores the effectiveness of fine-tuning in significantly enhancing the performance of the MarianMT model for our specific task, suggesting its adaptability and responsiveness to targeted optimizations.
 
-![COMPARISON OF THE MODELS](https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-11-879x1024.png
- "COMPARISON OF The Two Models (T5, MarianMT), Image by Pouya Sattari")
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Image-from-Presentation-Data-Security-page-11-879x1024.png" alt="COMPARISON OF The Two Models (T5, MarianMT), Image by Pouya Sattari" style="width:70%;">
+</p>
 
 ## Final Result
 
 To sum up, in this project, we demonstrated how to input code descriptions to the Transformer models and receive executable codes with an 81% accuracy by the MarianMT model.
 
-![Final Result](https://sattari.org/wp-content/uploads/2024/03/Screenshot-2024-03-05-at-02.12.04-1024x572.png
- "Final Result, Image by Pouya Sattari")
+<p align="center">
+  <img src="https://sattari.org/wp-content/uploads/2024/03/Screenshot-2024-03-05-at-02.12.04-1024x572.png" alt="Final Result, Image by Pouya Sattari">
+</p>
+
