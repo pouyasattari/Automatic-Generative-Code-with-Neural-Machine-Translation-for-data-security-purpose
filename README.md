@@ -4,8 +4,8 @@ Transformers, including the T5 and MarianMT, have enabled effective understandin
 <br>
 **Let's see how!**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bspK7ScxoW02pbhErIHlA1Q-rSZIF2lz)
-[![View the Jupyter File](https://img.shields.io/badge/view-the%20Jupyter%20File-orange)](https://github.com/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose/blob/main/Data_Security_t5small.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose/blob/main/Data_Security_t5small_new.ipynb)
+[![View the Jupyter File](https://img.shields.io/badge/view-the%20Jupyter-orange)](https://colab.research.google.com/github/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose/blob/main/Data_Security_t5small_new.ipynb)
 ![Stars](https://img.shields.io/github/stars/pouyasattari/Automatic-Generative-Code-with-Neural-Machine-Translation-for-data-security-purpose?style=social)
 
 
