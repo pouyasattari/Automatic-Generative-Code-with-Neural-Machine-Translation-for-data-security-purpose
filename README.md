@@ -1,6 +1,6 @@
 # 🚀 Automatic Generative Code with Neural Machine Translation (NMT)
 
-Transformers, including the T5 and MarianMT, have enabled effective understanding and generating complex programming codes.
+Transformers, including the T5 and MarianMT, have enabled effective understanding and generation of complex programming codes.
 <br><br>
 **Let's see how 👀**
 
